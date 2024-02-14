@@ -3,6 +3,7 @@ import requests
 import json
 import time
 import re
+import os
 from back import keep_alive
 
 BOT_TOKEN = os.environ['BOT_TOKEN']
