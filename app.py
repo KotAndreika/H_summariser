@@ -3,9 +3,11 @@ import requests
 import json
 import time
 import re
+from back import keep_alive
 
 BOT_TOKEN = os.environ['BOT_TOKEN']
 URL = os.environ['URL']
+keep_alive()
 
 def get(prompt):
     response = requests.post(URL, json={'prompt': prompt}, headers={"Content-Type": "application/json"})
